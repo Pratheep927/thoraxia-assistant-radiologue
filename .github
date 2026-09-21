@@ -1,0 +1,14 @@
+name: basic-ci
+on: [push, pull_request]
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --upgrade pip
+      - run: pip install -r requirements-test.txt
+      - run: PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q
+      - run: python eval/run_evaluation.py --mode toy --out-dir /tmp/assistant-radio-eval --db-path /tmp/assistant-radio-evidence.sqlite
