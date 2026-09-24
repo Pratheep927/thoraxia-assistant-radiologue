@@ -1,0 +1,237 @@
+{
+  "records": {
+    "rec_9c167e35": {
+      "patient_lastname": "Sivasaranam",
+      "patient_firstname": "sajin",
+      "patient_dob": "1980-01-01",
+      "patient_number": "",
+      "treatment_date": "2026-07-03",
+      "comments": [
+        {
+          "text": "très bonne santé",
+          "date": "2026-07-03T16:23:19Z"
+        }
+      ],
+      "image_filename": "rec_9c167e35.png",
+      "analysis": {
+        "image_quality": "good",
+        "predicted_class": "normal",
+        "confidence": 0.8,
+        "visual_evidence": [
+          "The lungs appear relatively clear with no obvious consolidation or large masses.",
+          "The heart size appears within normal limits.",
+          "The mediastinum is unremarkable."
+        ],
+        "justification": "The image quality is good, and there are no obvious signs of acute pathology such as pneumonia or pneumothorax. The heart size appears normal, and the mediastinum is unremarkable. However, without clinical context, it is difficult to definitively rule out subtle abnormalities.",
+        "limitations": [
+          "image quality",
+          "projection",
+          "lack of clinical context"
+        ],
+        "warning": "Prototype pédagogique. Non destiné au diagnostic. Validation par un professionnel qualifié requise.",
+        "model_name": "google/medgemma-4b-it",
+        "prompt_version": "improved_v1",
+        "raw_response": "```json\n{\n  \"image_quality\": \"good\",\n  \"predicted_class\": \"normal\",\n  \"confidence\": 0.8,\n  \"visual_evidence\": [\n    \"The lungs appear relatively clear with no obvious consolidation or large masses.\",\n    \"The heart size appears within normal limits.\",\n    \"The mediastinum is unremarkable.\"\n  ],\n  \"justification\": \"The image quality is good, and there are no obvious signs of acute pathology such as pneumonia or pneumothorax. The heart size appears normal, and the mediastinum is unremarkable. Howe",
+        "guardrail_errors": []
+      },
+      "latency": 358.0,
+      "directory": "/sajin sivasarnam",
+      "created_at": "2026-07-03T16:23:19Z",
+      "created_by": "sajinsiva10@gmail.com"
+    },
+    "rec_b15c23b2": {
+      "patient_lastname": "Sivasaranam",
+      "patient_firstname": "Sajin",
+      "patient_dob": "1980-01-01",
+      "patient_number": "",
+      "treatment_date": "2026-07-03",
+      "comments": [
+        {
+          "text": "risuqe malaidie",
+          "date": "2026-07-03T16:25:00Z"
+        }
+      ],
+      "image_filename": "rec_b15c23b2.png",
+      "analysis": {
+        "image_quality": "good",
+        "predicted_class": "suspected_opacity",
+        "confidence": 0.65,
+        "visual_evidence": [
+          "There is increased opacity in the right lung field, potentially indicating consolidation or fluid.",
+          "The left lung appears relatively clear.",
+          "Multiple lines and tubes are present, likely representing medical devices."
+        ],
+        "justification": "The increased opacity in the right lung field warrants further investigation. The presence of multiple lines and tubes suggests the patient is receiving medical care. However, without clinical context, it is difficult to determine the exact cause of the opacity.",
+        "limitations": [
+          "image quality",
+          "projection",
+          "lack of clinical context"
+        ],
+        "warning": "Prototype pédagogique. Non destiné au diagnostic. Validation par un professionnel qualifié requise.",
+        "model_name": "google/medgemma-4b-it",
+        "prompt_version": "improved_v1",
+        "raw_response": "```json\n{\n  \"image_quality\": \"good\",\n  \"predicted_class\": \"suspected_opacity\",\n  \"confidence\": 0.65,\n  \"visual_evidence\": [\n    \"There is increased opacity in the right lung field, potentially indicating consolidation or fluid.\",\n    \"The left lung appears relatively clear.\",\n    \"Multiple lines and tubes are present, likely representing medical devices.\"\n  ],\n  \"justification\": \"The increased opacity in the right lung field warrants further investigation. The presence of multiple lines and tube",
+        "guardrail_errors": []
+      },
+      "latency": 178.6,
+      "directory": "/sajin sivasarnam",
+      "created_at": "2026-07-03T16:25:00Z",
+      "created_by": "sajinsiva10@gmail.com"
+    },
+    "rec_80f30d67": {
+      "patient_lastname": "Shan",
+      "patient_firstname": "Yannick",
+      "patient_dob": "1980-01-10",
+      "patient_number": "",
+      "treatment_date": "2026-07-05",
+      "comments": [
+        {
+          "text": "très bon resultat",
+          "date": "2026-07-05T12:02:26Z"
+        }
+      ],
+      "image_filename": "rec_80f30d67.png",
+      "analysis": {
+        "image_quality": "good",
+        "predicted_class": "normal",
+        "confidence": 0.8,
+        "visual_evidence": [
+          "The lungs appear relatively clear with no obvious consolidation or large masses.",
+          "The heart size appears within normal limits.",
+          "The mediastinum is unremarkable."
+        ],
+        "justification": "The image quality is good, and there are no obvious signs of acute pathology such as pneumonia or large pleural effusions. The heart size appears normal, and the mediastinum is unremarkable. However, without clinical context, it is difficult to definitively rule out subtle abnormalities.",
+        "limitations": [
+          "image quality",
+          "projection",
+          "lack of clinical context"
+        ],
+        "warning": "Prototype pédagogique. Non destiné au diagnostic. Validation par un professionnel qualifié requise.",
+        "model_name": "google/medgemma-4b-it",
+        "prompt_version": "improved_v1",
+        "raw_response": "```json\n{\n  \"image_quality\": \"good\",\n  \"predicted_class\": \"normal\",\n  \"confidence\": 0.8,\n  \"visual_evidence\": [\n    \"The lungs appear relatively clear with no obvious consolidation or large masses.\",\n    \"The heart size appears within normal limits.\",\n    \"The mediastinum is unremarkable.\"\n  ],\n  \"justification\": \"The image quality is good, and there are no obvious signs of acute pathology such as pneumonia or large pleural effusions. The heart size appears normal, and the mediastinum is unremar",
+        "guardrail_errors": []
+      },
+      "latency": 263.6,
+      "directory": "/yannick shan",
+      "created_at": "2026-07-05T12:02:26Z",
+      "created_by": "sajinsiva10@gmail.com"
+    },
+    "rec_884f5447": {
+      "patient_lastname": "yannick",
+      "patient_firstname": "shan",
+      "patient_dob": "1980-01-01",
+      "patient_number": "",
+      "treatment_date": "2026-07-05",
+      "comments": [
+        {
+          "text": "risque",
+          "date": "2026-07-05T12:14:19Z"
+        }
+      ],
+      "image_filename": "rec_884f5447.png",
+      "analysis": {
+        "image_quality": "good",
+        "predicted_class": "suspected_opacity",
+        "confidence": 0.65,
+        "visual_evidence": [
+          "There appears to be increased opacity in the right upper lung field.",
+          "The right hilum is also somewhat prominent."
+        ],
+        "justification": "The increased opacity in the right upper lung field could be due to consolidation from pneumonia or other infiltrative processes. The prominence of the right hilum could be due to enlarged lymph nodes or vascular structures. However, these findings are not definitive and could be due to projection or other factors.",
+        "limitations": [
+          "image quality",
+          "projection",
+          "lack of clinical context"
+        ],
+        "warning": "Prototype pédagogique. Non destiné au diagnostic. Validation par un professionnel qualifié requise.",
+        "model_name": "google/medgemma-4b-it",
+        "prompt_version": "improved_v1",
+        "raw_response": "```json\n{\n  \"image_quality\": \"good\",\n  \"predicted_class\": \"suspected_opacity\",\n  \"confidence\": 0.65,\n  \"visual_evidence\": [\n    \"There appears to be increased opacity in the right upper lung field.\",\n    \"The right hilum is also somewhat prominent.\"\n  ],\n  \"justification\": \"The increased opacity in the right upper lung field could be due to consolidation from pneumonia or other infiltrative processes. The prominence of the right hilum could be due to enlarged lymph nodes or vascular structures. ",
+        "guardrail_errors": []
+      },
+      "latency": 261.6,
+      "directory": "/yannick shan",
+      "created_at": "2026-07-05T12:14:19Z",
+      "created_by": "sajinsiva10@gmail.com"
+    },
+    "rec_a98c9037": {
+      "patient_lastname": "Ssajin",
+      "patient_firstname": "Sivasaranam",
+      "patient_dob": "2005-10-10",
+      "patient_number": "",
+      "treatment_date": "2026-07-05",
+      "comments": [
+        {
+          "text": "maladie",
+          "date": "2026-07-05T13:11:15Z"
+        }
+      ],
+      "image_filename": "rec_a98c9037.png",
+      "analysis": {
+        "image_quality": "good",
+        "predicted_class": "suspected_opacity",
+        "confidence": 0.65,
+        "visual_evidence": [
+          "There are numerous bilateral opacities throughout both lung fields.",
+          "The heart size appears within normal limits.",
+          "The mediastinum is unremarkable."
+        ],
+        "justification": "The image shows widespread bilateral opacities, which could be due to various causes such as pneumonia, pulmonary edema, or ARDS. However, the image quality is good, and the heart size appears normal, making a definitive diagnosis difficult without further information.",
+        "limitations": [
+          "image quality",
+          "projection",
+          "lack of clinical context"
+        ],
+        "warning": "Prototype pédagogique. Non destiné au diagnostic. Validation par un professionnel qualifié requise.",
+        "model_name": "google/medgemma-4b-it",
+        "prompt_version": "improved_v1",
+        "raw_response": "```json\n{\n  \"image_quality\": \"good\",\n  \"predicted_class\": \"suspected_opacity\",\n  \"confidence\": 0.65,\n  \"visual_evidence\": [\n    \"There are numerous bilateral opacities throughout both lung fields.\",\n    \"The heart size appears within normal limits.\",\n    \"The mediastinum is unremarkable.\"\n  ],\n  \"justification\": \"The image shows widespread bilateral opacities, which could be due to various causes such as pneumonia, pulmonary edema, or ARDS. However, the image quality is good, and the heart size ",
+        "guardrail_errors": []
+      },
+      "latency": 176.8,
+      "directory": "/sajin sivasarnam",
+      "created_at": "2026-07-05T13:11:15Z",
+      "created_by": "sajinsiva10@gmail.com"
+    },
+    "rec_3ad9351b": {
+      "patient_lastname": "yannick",
+      "patient_firstname": "shan",
+      "patient_dob": "1980-01-01",
+      "patient_number": "",
+      "treatment_date": "2026-07-05",
+      "comments": [],
+      "image_filename": "rec_3ad9351b.png",
+      "analysis": {
+        "image_quality": "good",
+        "predicted_class": "suspected_opacity",
+        "confidence": 0.65,
+        "visual_evidence": [
+          "There are bilateral opacities, particularly in the lower lung fields, which could be due to pulmonary edema or pneumonia.",
+          "The heart size appears normal, but the mediastinal structures are difficult to assess due to the opacities.",
+          "The ribs and clavicles are visible, suggesting adequate inspiration."
+        ],
+        "justification": "The image shows bilateral opacities, which could be caused by fluid accumulation in the lungs, such as pulmonary edema or pneumonia. The heart size is not clearly visible due to the opacities. The ribs and clavicles are visible, suggesting adequate inspiration. However, the lack of clinical context makes it difficult to determine the exact cause of the opacities.",
+        "limitations": [
+          "image quality",
+          "projection",
+          "lack of clinical context"
+        ],
+        "warning": "Prototype pédagogique. Non destiné au diagnostic. Validation par un professionnel qualifié requise.",
+        "model_name": "google/medgemma-4b-it",
+        "prompt_version": "improved_v1",
+        "raw_response": "```json\n{\n  \"image_quality\": \"good\",\n  \"predicted_class\": \"suspected_opacity\",\n  \"confidence\": 0.65,\n  \"visual_evidence\": [\n    \"There are bilateral opacities, particularly in the lower lung fields, which could be due to pulmonary edema or pneumonia.\",\n    \"The heart size appears normal, but the mediastinal structures are difficult to assess due to the opacities.\",\n    \"The ribs and clavicles are visible, suggesting adequate inspiration.\"\n  ],\n  \"justification\": \"The image shows bilateral opacit",
+        "guardrail_errors": []
+      },
+      "latency": 297.0,
+      "directory": "/yannick shan",
+      "created_at": "2026-07-05T13:17:18Z",
+      "created_by": "sajinsiva10@gmail.com"
+    }
+  },
+  "directories": [
+    "/",
+    "/sajin sivasarnam",
+    "/yannick shan"
+  ]
+}

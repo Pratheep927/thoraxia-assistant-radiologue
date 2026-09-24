@@ -1,0 +1,56 @@
+# Environnement Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Données lourdes (sauf rsna_png qu'on garde)
+data/rsna_raw/
+data/rsna_uncertain_cases/
+data/_temp_upload.png
+.cache/
+
+# Secrets 
+.env
+kaggle.json
+*.token
+
+# IDE
+.vscode/
+.idea/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+
+
+
+# Airflow runtime
+eval/outputs/
+medical_ai_evidence.sqlite
+eval/medical_ai_evidence.sqlite
+
+# Airflow runtime
+airflow/logs/
+airflow/.env
+airflow/plugins/
+airflow/config/
+
+# Dataset RSNA complet
+data/rsna_full/
+
+
+# Auth (contient hash de mots de passe utilisateurs)
+data/users.json
+
+# Fichier temporaire d'upload
+data/_temp_upload.png
+
+ data/patient_records/
