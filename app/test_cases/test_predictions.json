@@ -1,0 +1,872 @@
+{
+  "RSNA_020.png": {
+    "case_id": "RSNA_020",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "uncertain",
+      "confidence": 0.3,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There appears to be some increased opacity in the lower lung fields, particularly on the left side.",
+        "The heart size appears within normal limits based on the image.",
+        "The mediastinum is midline."
+      ],
+      "justification": "The increased opacity in the lower lung fields could be due to various factors, including atelectasis, pneumonia, or edema. The image quality is good, but the lack of clinical context makes it difficult to determine the cause. The heart size appears normal, but this is a limited assessment.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context",
+        "limited assessment of heart size"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": false,
+    "is_uncertain": true,
+    "measured_latency": 206.5
+  },
+  "RSNA_007.png": {
+    "case_id": "RSNA_007",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "uncertain",
+      "confidence": 0.4,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There appears to be some increased opacity in the lower lung fields, potentially obscuring the diaphragmatic contours.",
+        "The heart size appears within normal limits based on the image quality.",
+        "The mediastinum is midline."
+      ],
+      "justification": "The image quality is good, but the lower lung fields are somewhat obscured, making it difficult to definitively assess for any abnormalities. The increased opacity could be due to various factors, including atelectasis, pleural effusion, or even just poor inspiration. Further evaluation with a lateral chest X-ray would be needed to clarify the cause.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context",
+        "limited visualization of the lung bases"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": false,
+    "is_uncertain": true,
+    "measured_latency": 194.0
+  },
+  "RSNA_016.png": {
+    "case_id": "RSNA_016",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "uncertain",
+      "confidence": 0.4,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There is a significant opacity in the left hemithorax, obscuring the lung markings.",
+        "The right lung appears relatively clear.",
+        "There is a catheter in the right subclavian vein."
+      ],
+      "justification": "The opacity in the left hemithorax could be due to a number of factors, including a pleural effusion, consolidation, or atelectasis. The right lung appears relatively clear, which could be due to the patient's inspiration level or the presence of a pneumothorax. The catheter in the right subclavian vein is likely for central venous access.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context",
+        "limited information about the patient's history and symptoms"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": false,
+    "is_uncertain": true,
+    "measured_latency": 198.4
+  },
+  "RSNA_088.png": {
+    "case_id": "RSNA_088",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "uncertain",
+      "confidence": 0.4,
+      "image_quality": "limited",
+      "visual_evidence": [
+        "There are multiple opacities in both lungs, which could be due to various factors.",
+        "The image is somewhat limited by the patient's position and the presence of medical devices.",
+        "The heart size appears enlarged, but this could be due to the projection."
+      ],
+      "justification": "The image quality is limited by the patient's position and the presence of medical devices. The multiple opacities in both lungs could be due to various factors, including pneumonia, atelectasis, or other lung abnormalities. The heart size appears enlarged, but this could be due to the projection.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": false,
+    "is_uncertain": true,
+    "measured_latency": 190.0
+  },
+  "RSNA_014.png": {
+    "case_id": "RSNA_014",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear clear with no obvious consolidation or masses.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious abnormalities such as consolidation, masses, or significant cardiomegaly. The mediastinum appears normal. However, without clinical context, it is difficult to definitively rule out subtle findings.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 160.6
+  },
+  "RSNA_040.png": {
+    "case_id": "RSNA_040",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear clear with no obvious consolidation or infiltrates.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious abnormalities such as consolidation or masses. The heart size appears normal, and the mediastinum is unremarkable. The patient is likely in a good inspiratory position.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 233.8
+  },
+  "RSNA_027.png": {
+    "case_id": "RSNA_027",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear clear with no obvious consolidation or masses.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image shows a frontal view of the chest with no obvious abnormalities. The lungs appear clear, and the heart size is within normal limits. The mediastinum is unremarkable. However, without clinical context, it is difficult to definitively rule out subtle findings.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 225.2
+  },
+  "RSNA_035.png": {
+    "case_id": "RSNA_035",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear relatively clear, with no obvious large consolidations or effusions.",
+        "The heart size appears within normal limits.",
+        "There is a central venous catheter present, likely for central venous access."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology such as pneumonia or pneumothorax. The heart size appears normal, and the central venous catheter is present.",
+      "limitations": [
+        "Lack of clinical context",
+        "No patient history"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.4
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 223.3
+  },
+  "RSNA_017.png": {
+    "case_id": "RSNA_017",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear relatively clear with no obvious consolidation or large masses.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology. The lungs are clear, the heart size is normal, and the mediastinum is unremarkable. However, without clinical context, it is difficult to definitively rule out subtle abnormalities.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 229.0
+  },
+  "RSNA_047.png": {
+    "case_id": "RSNA_047",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear relatively clear with no obvious consolidation or large masses.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology such as pneumonia or pneumothorax. The heart size appears normal, and the mediastinum is unremarkable. The presence of a device suggests a possible medical intervention.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.4
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 224.3
+  },
+  "RSNA_038.png": {
+    "case_id": "RSNA_038",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear clear with no obvious consolidation or infiltrates.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology such as consolidation or large masses. The heart size appears normal, and the mediastinum is unremarkable. However, without clinical context, it is difficult to definitively rule out subtle abnormalities.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 239.6
+  },
+  "RSNA_009.png": {
+    "case_id": "RSNA_009",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear relatively clear with no obvious consolidation or large masses.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology such as pneumonia or pneumothorax. The heart size appears normal, and the mediastinum is unremarkable. The patient is likely in a good inspiratory position.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 239.7
+  },
+  "RSNA_031.png": {
+    "case_id": "RSNA_031",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear clear bilaterally.",
+        "The heart size is within normal limits.",
+        "There are no obvious fractures or dislocations."
+      ],
+      "justification": "The image appears to be a frontal chest X-ray with good image quality. The lungs are clear, and the heart size is normal. There are no obvious fractures or dislocations. The patient is likely in a portable position.",
+      "limitations": [
+        "Lack of clinical context.",
+        "Projection and patient positioning."
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 215.7
+  },
+  "RSNA_032.png": {
+    "case_id": "RSNA_032",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear relatively clear with no obvious consolidation or large masses.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology such as pneumonia or pneumothorax. The heart size appears normal, and the mediastinum is unremarkable. However, without clinical context, it is difficult to definitively rule out subtle abnormalities.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 229.6
+  },
+  "RSNA_049.png": {
+    "case_id": "RSNA_049",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear relatively clear with no obvious consolidation or large masses.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology. The lungs are clear, and the heart size is normal. The mediastinum appears unremarkable. However, without clinical context, it is difficult to definitively rule out subtle abnormalities.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 227.7
+  },
+  "RSNA_013.png": {
+    "case_id": "RSNA_013",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear relatively clear with no obvious consolidation or large masses.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology. The heart size appears normal, and the lungs are clear. However, without clinical context, it's difficult to definitively rule out subtle abnormalities.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 224.3
+  },
+  "RSNA_004.png": {
+    "case_id": "RSNA_004",
+    "true_label": "normal",
+    "prediction": {
+      "predicted_class": "normal",
+      "confidence": 0.8,
+      "image_quality": "good",
+      "visual_evidence": [
+        "The lungs appear clear with no obvious consolidation or infiltrates.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image quality is good, and there are no obvious signs of acute pathology such as consolidation or significant cardiomegaly. The mediastinum appears normal. However, without clinical context, it is difficult to definitively rule out subtle abnormalities.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "normal",
+      "confidence": 0.8
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 222.6
+  },
+  "RSNA_083.png": {
+    "case_id": "RSNA_083",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There is increased opacity in the right lower lung field.",
+        "The right picc line is visible."
+      ],
+      "justification": "The increased opacity in the right lower lung field could be due to consolidation, atelectasis, or other infiltrative processes. The right picc line is present, which could be a source of artifact.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 243.6
+  },
+  "RSNA_097.png": {
+    "case_id": "RSNA_097",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There are bilateral opacities, particularly in the lower lung fields, which could be due to pulmonary edema or pneumonia.",
+        "The heart size appears normal, but the mediastinal structures are difficult to assess due to the opacities.",
+        "The ribs and clavicles are visible, suggesting adequate inspiration."
+      ],
+      "justification": "The image shows bilateral opacities, which could be caused by fluid accumulation in the lungs, such as pulmonary edema or pneumonia. The heart size is not clearly visible due to the opacities. The ribs and clavicles are visible, suggesting adequate inspiration. However, the lack of clinical context makes it difficult to determine the exact cause of the opacities.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 301.6
+  },
+  "RSNA_064.png": {
+    "case_id": "RSNA_064",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There are numerous bilateral opacities throughout both lung fields.",
+        "The heart size appears within normal limits.",
+        "The mediastinum is unremarkable."
+      ],
+      "justification": "The image shows widespread bilateral opacities, which could be due to various causes such as pneumonia, pulmonary edema, or ARDS. However, the image quality is good, and the heart size appears normal, making a definitive diagnosis difficult without further information.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 230.5
+  },
+  "RSNA_066.png": {
+    "case_id": "RSNA_066",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There is increased opacity in both lung fields, potentially indicating pulmonary edema or consolidation.",
+        "The heart size appears normal, but the mediastinal structures are difficult to assess due to the increased opacity."
+      ],
+      "justification": "The increased opacity in both lung fields could be due to various factors, including pulmonary edema, pneumonia, or aspiration. The mediastinal structures are difficult to visualize clearly due to the increased density in the lungs. Further evaluation is needed to determine the underlying cause.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 239.2
+  },
+  "RSNA_055.png": {
+    "case_id": "RSNA_055",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There are diffuse opacities in both lung fields, particularly in the right upper lobe.",
+        "The heart size appears to be normal.",
+        "There is an endotracheal tube in place."
+      ],
+      "justification": "The diffuse opacities in both lung fields could be due to various causes, including pneumonia, pulmonary edema, or ARDS. The endotracheal tube indicates the patient is intubated, which could be a factor in the observed findings. However, without clinical context, it is difficult to determine the exact cause.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 253.2
+  },
+  "RSNA_070.png": {
+    "case_id": "RSNA_070",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There are increased opacities in the right lung field.",
+        "The heart size appears enlarged.",
+        "Multiple lines and tubes are present, likely related to medical interventions."
+      ],
+      "justification": "The increased opacities in the right lung field could be due to various factors, including pneumonia, edema, or aspiration. The enlarged heart size could be a sign of cardiomegaly. The presence of multiple lines and tubes suggests that the patient is receiving medical care.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 238.1
+  },
+  "RSNA_054.png": {
+    "case_id": "RSNA_054",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There appears to be increased opacity in the left lower lung field.",
+        "The right lung field appears relatively clear."
+      ],
+      "justification": "The increased opacity in the left lower lung field could be due to various factors, including fluid accumulation, consolidation, or atelectasis. The right lung field appears relatively clear, which could be a normal finding or a compensatory response.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 218.8
+  },
+  "RSNA_090.png": {
+    "case_id": "RSNA_090",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There is increased opacity in the right lung field, potentially indicating consolidation or fluid.",
+        "The left lung appears relatively clear.",
+        "Multiple lines and tubes are present, likely representing medical devices."
+      ],
+      "justification": "The increased opacity in the right lung field warrants further investigation. The presence of multiple lines and tubes suggests the patient is receiving medical care. However, without clinical context, it is difficult to determine the exact cause of the opacity.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 235.5
+  },
+  "RSNA_075.png": {
+    "case_id": "RSNA_075",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There are bilateral opacities, particularly in the lower lung fields.",
+        "The heart size appears to be slightly enlarged.",
+        "There is some increased density in the right upper lung field."
+      ],
+      "justification": "The image shows bilateral opacities, which could be due to pneumonia, pulmonary edema, or other lung conditions. The heart size appears slightly enlarged, which could be related to the lung pathology or underlying cardiac issues. The increased density in the right upper lung field warrants further investigation.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 187.9
+  },
+  "RSNA_099.png": {
+    "case_id": "RSNA_099",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There is a large opacity in the left hemithorax, obscuring the lung markings.",
+        "The right lung appears relatively clear, with some increased interstitial markings.",
+        "There is a central line visible in the right subclavian vein."
+      ],
+      "justification": "The large opacity in the left hemithorax suggests a possible pleural effusion or consolidation. The right lung appears relatively clear, but there are some increased interstitial markings, which could be due to pulmonary edema or other lung pathology. The central line is present.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 182.4
+  },
+  "RSNA_081.png": {
+    "case_id": "RSNA_081",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There are increased opacities in both lung fields, particularly in the perihilar regions.",
+        "The heart size appears enlarged.",
+        "There are multiple lines and tubes present, likely for medical support."
+      ],
+      "justification": "The increased opacities in the lung fields, especially around the hilum, could indicate pulmonary edema or consolidation. The enlarged heart size could be related to cardiomegaly or fluid overload. The presence of multiple lines and tubes suggests the patient is receiving medical support.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context",
+        "limited information about the patient's condition"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 189.2
+  },
+  "RSNA_059.png": {
+    "case_id": "RSNA_059",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There are diffuse opacities throughout both lung fields, which could be due to pulmonary edema, pneumonia, or ARDS.",
+        "The heart size appears enlarged, which could be due to cardiomegaly or pericardial effusion.",
+        "There is a catheter in the right subclavian vein, which is likely for central venous access."
+      ],
+      "justification": "The diffuse opacities in both lungs are concerning and could be caused by various conditions. The enlarged heart size warrants further investigation. The presence of a central line suggests the patient is receiving medical care.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context",
+        "limited information about the patient's history and symptoms"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 197.0
+  },
+  "RSNA_092.png": {
+    "case_id": "RSNA_092",
+    "true_label": "suspected_opacity",
+    "prediction": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.65,
+      "image_quality": "good",
+      "visual_evidence": [
+        "There appears to be increased opacity in the lower lung fields bilaterally.",
+        "The heart size appears enlarged.",
+        "There are multiple lines and tubes present, likely related to medical support."
+      ],
+      "justification": "The increased opacity in the lower lung fields could be due to fluid accumulation (pleural effusion or pulmonary edema). The enlarged heart size could be related to cardiomegaly. The presence of multiple lines and tubes suggests the patient is receiving medical support.",
+      "limitations": [
+        "image quality",
+        "projection",
+        "lack of clinical context"
+      ],
+      "model_name": "google/medgemma-4b-it",
+      "prompt_version": "improved_v1"
+    },
+    "baseline": {
+      "predicted_class": "suspected_opacity",
+      "confidence": 0.6
+    },
+    "is_correct": true,
+    "is_uncertain": false,
+    "measured_latency": 172.4
+  }
+}
